@@ -36,8 +36,9 @@
   "resources":[
     {"id":{"name":"Object1","path":"objects/Object1/Object1.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-    {"id":{"name":"Sound1","path":"sounds/Sound1/Sound1.yy",},},
-    {"id":{"name":"Sound2","path":"sounds/Sound2/Sound2.yy",},},
+    {"id":{"name":"mu_1","path":"sounds/mu_1/mu_1.yy",},},
+    {"id":{"name":"mu_2","path":"sounds/mu_2/mu_2.yy",},},
+    {"id":{"name":"mu_3","path":"sounds/mu_3/mu_3.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

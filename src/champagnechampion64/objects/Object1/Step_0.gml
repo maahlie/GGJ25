@@ -19,16 +19,23 @@ if keyboard_check_pressed(ord("C"))
 
 
 
-if (drank => 0)
+if (drank >= 0)
 {
-	if !audio_is_playing(music)
-	{
-		music = audio_play_sound(Sound2,0,true)
-	}
+		audio_sound_gain(mu_1, 50, 0);		
+		audio_sound_gain(mu_2, 0, 0);
+		audio_sound_gain(mu_3, 0, 0);
 }
 
-
-if keyboard_check_pressed(ord("P"))
+if (drank >= 10)
 {
-	audio_stop_sound(music);
+		audio_sound_gain(mu_1, 0, 0);
+		audio_sound_gain(mu_2, 50, 0);
+		audio_sound_gain(mu_3, 0, 0);
+}
+
+if (drank >= 20)
+{
+		audio_sound_gain(mu_1, 0, 0);
+		audio_sound_gain(mu_2, 0, 0);
+		audio_sound_gain(mu_3, 50, 0);
 }

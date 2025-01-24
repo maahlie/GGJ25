@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"mu_1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":224,
+  "compression":0,
+  "conversionMode":0,
+  "duration":29.538458,
+  "name":"mu_1",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mu_1.ogg",
+  "type":1,
+  "volume":1.0,
+}

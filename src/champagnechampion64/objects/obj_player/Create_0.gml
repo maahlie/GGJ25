@@ -1,6 +1,10 @@
+global.convo=false
+
 self.pitch = 0;
 self.z = 0;
 self.max_speed = 120;
+
+cursspr = 0
 
 dx = 0;
 dy = 0;
@@ -33,9 +37,10 @@ self.vb_spawner = load_vbuff("spawner.vbuff", self.vertex_format);
 self.vb_snowball = load_vbuff("snowball.vbuff", self.vertex_format);
 self.vb_sunflower = load_vbuff("sunflower.vbuff", self.vertex_format);
 
-self.vb_lucas = load_vbuff("mannetje.vbuff", self.vertex_format);
+self.vb_npc = load_vbuff("mannetje.vbuff", self.vertex_format);
 self.vb_plate = load_vbuff("baseplate.vbuff", self.vertex_format);
 self.vb_drink = load_vbuff("champagne_glass_4b_2.vbuff", self.vertex_format);
+self.vb_table = load_vbuff("tafel_rond.vbuff", self.vertex_format);
 
 application_surface_draw_enable(false);
 

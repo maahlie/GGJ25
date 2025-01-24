@@ -74,6 +74,9 @@ if canint
 	var _inst = instance_place(self.x, self.y, obj_champagne);
 	if (global.a_pressed)
 	{
+		
+		points++;
+		
 		with _inst 
 		{
 			instance_destroy()

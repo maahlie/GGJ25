@@ -35,3 +35,12 @@ if keyboard_check_pressed(vk_f11)
 		window_set_fullscreen(true)
 	}
 }
+
+if keyboard_check(ord("R"))
+{
+	with all
+	{
+	instance_destroy()
+	}
+ room=rm_startmenu
+}

@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"fonts","order":4,"path":"folders/fonts.yy",},
+    {"name":"undesired","order":12,"path":"folders/objects/undesired.yy",},
     {"name":"music","order":2,"path":"folders/music.yy",},
     {"name":"objects","order":14,"path":"folders/objects.yy",},
     {"name":"rooms","order":20,"path":"folders/rooms.yy",},
@@ -11,6 +12,7 @@
   "ResourceOrderSettings":[
     {"name":"obj_base","order":8,"path":"objects/obj_base/obj_base.yy",},
     {"name":"obj_block","order":7,"path":"objects/obj_block/obj_block.yy",},
+    {"name":"obj_menu","order":11,"path":"objects/obj_menu/obj_menu.yy",},
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
     {"name":"obj_renderable","order":6,"path":"objects/obj_renderable/obj_renderable.yy",},
     {"name":"obj_snowball","order":10,"path":"objects/obj_snowball/obj_snowball.yy",},
@@ -19,7 +21,8 @@
     {"name":"obj_water_particle","order":3,"path":"objects/obj_water_particle/obj_water_particle.yy",},
     {"name":"obj_waypoint","order":9,"path":"objects/obj_waypoint/obj_waypoint.yy",},
     {"name":"obj_xor","order":4,"path":"objects/obj_xor/obj_xor.yy",},
-    {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
+    {"name":"rm_game","order":1,"path":"rooms/rm_game/rm_game.yy",},
+    {"name":"Room1","order":2,"path":"rooms/Room1/Room1.yy",},
     {"name":"col_balloon","order":4,"path":"sprites/col_balloon/col_balloon.yy",},
     {"name":"col_base","order":6,"path":"sprites/col_base/col_base.yy",},
     {"name":"col_player","order":3,"path":"sprites/col_player/col_player.yy",},

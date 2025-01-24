@@ -2,6 +2,9 @@ self.pitch = 0;
 self.z = 0;
 self.max_speed = 120;
 
+dx = 0;
+dy = 0;
+
 vertex_format_begin();
 vertex_format_add_position_3d();
 vertex_format_add_normal();

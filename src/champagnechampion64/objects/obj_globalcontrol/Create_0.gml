@@ -22,3 +22,4 @@ global.b_hold = false;
 global.start_hold = false;
 
 gamepad_set_axis_deadzone(0,0.5)
+

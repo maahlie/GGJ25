@@ -11,7 +11,7 @@ self.direction += global.cursordx//(window_mouse_get_x() - window_get_width() / 
 self.pitch += global.cursordy//(window_mouse_get_y() - window_get_height() / 2) / 10;
 self.pitch = clamp(self.pitch, -80, 80);
 
-window_mouse_set(window_get_width() / 2, window_get_height() / 2);
+
 
 //if (keyboard_check(vk_shift)) {
 //    self.max_speed = 160;
@@ -19,7 +19,8 @@ window_mouse_set(window_get_width() / 2, window_get_height() / 2);
 self.max_speed = 120;
 //}
 
-var dx = 0, dy = 0;
+dx *= 0.8
+dy *= 0.8
 
 if global.left_hold
 {

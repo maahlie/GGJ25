@@ -1,13 +1,13 @@
-#macro c_sky #87CEEB
+#macro c_sky #ffa214
 
-draw_clear(c_sky);
+draw_clear(#ffa214);
 
 var xto = self.x + dcos(self.direction) * dcos(self.pitch);
 var yto = self.y - dsin(self.direction) * dcos(self.pitch);
-var zto = self.z - dsin(self.pitch) + 16;
+var zto = self.z - dsin(self.pitch) + 32;
 var xfrom = self.x;
 var yfrom = self.y;
-var zfrom = self.z + 16;
+var zfrom = self.z + 32;
 
 gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
@@ -23,11 +23,11 @@ shader_set(shd_world);
 shader_set_uniform_f(shader_get_uniform(shd_world, "u_Color"), 1, 1, 1);
 shader_set_uniform_f(shader_get_uniform(shd_world, "u_LightDirection"), 1, 1, -1);
 shader_set_uniform_f(shader_get_uniform(shd_world, "u_FogColor"), colour_get_red(#ffa214) / 255, colour_get_green($ffa214) / 255, colour_get_blue(#ffa214) / 255);
-shader_set_uniform_f(shader_get_uniform(shd_world, "u_FogDistance"), 1600);
+shader_set_uniform_f(shader_get_uniform(shd_world, "u_FogDistance"), 1500);
 shader_set_uniform_f(shader_get_uniform(shd_world, "u_FogStrength"), 0.5);
 
 matrix_set(matrix_world, matrix_build(self.x, self.y, 0, 0, 0, 0, 1, 1, 1));
-vertex_submit(self.vb_floor, pr_trianglelist, sprite_get_texture(spr_grass, 0));
+//vertex_submit(self.vb_floor, pr_trianglelist, sprite_get_texture(spr_grass, 0));
 
 with (obj_renderable) event_perform(ev_draw, 0);
 

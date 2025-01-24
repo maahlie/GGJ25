@@ -11,8 +11,8 @@
   "name":"obj_snowball",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"undesired",
+    "path":"folders/objects/undesired.yy",
   },
   "parentObjectId":{
     "name":"obj_renderable",

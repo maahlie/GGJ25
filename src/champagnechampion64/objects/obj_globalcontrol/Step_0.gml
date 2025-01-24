@@ -24,11 +24,14 @@ global.start_hold = keyboard_check(vk_escape) | gamepad_button_check(0, gp_start
 global.cursordx = -gamepad_axis_value(0, gp_axislh)*3 - (window_mouse_get_x() - window_get_width() / 2) / 10;
 global.cursordy = gamepad_axis_value(0, gp_axislv)*3 + (window_mouse_get_y() - window_get_height() / 2) / 10;
 
-if window_get_fullscreen() == true
+if keyboard_check_pressed(vk_f11)
 {
-	window_set_fullscreen(false)
-}
-else
-{
-	window_set_fullscreen(true)
+	if window_get_fullscreen() == true
+	{
+		window_set_fullscreen(false)
+	}
+	else
+	{
+		window_set_fullscreen(true)
+	}
 }

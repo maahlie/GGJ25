@@ -13,14 +13,7 @@ self.pitch = clamp(self.pitch, -80, 80);
 
 
 
-//if (keyboard_check(vk_shift)) {
-//    self.max_speed = 160;
-//} else {
 self.max_speed = 120;
-//}
-
-dx *= 0.8
-dy *= 0.8
 
 if global.left_hold
 {
@@ -67,19 +60,34 @@ if (!place_meeting(self.x, self.y + frac(abs(dy)) * sign(dy), obj_block)) {
     self.y += frac(abs(dy)) * sign(dy);
 }
 
-if (global.a_pressed) 
+if place_meeting(self.x, self.y, obj_champagne)
 {
-    self.ThrowBalloon();
+	canint = true;
 }
+else
+{
+	canint = false;
+}
+
+if canint
+{
+	var _inst = instance_place(self.x, self.y, obj_champagne);
+	if (global.a_pressed)
+	{
+		with _inst 
+		{
+			instance_destroy()
+		}
+	}
+}
+
+//if (global.a_pressed) /
+//{
+//    self.ThrowBalloon();
+//}
 
 if (global.b_pressed)
 {
 	gamepad_set_vibration(0,1,1)
 	alarm[0] = 30
-}
-
-
-if (!self.has_won && self.snowmen_remaining + instance_number(obj_xor) == 0) {
-    show_message("you win!");
-    self.has_won = true;
 }

@@ -5,6 +5,10 @@ self.max_speed = 120;
 dx = 0;
 dy = 0;
 
+canint = false;
+points = 0;
+suspicion=0;
+
 vertex_format_begin();
 vertex_format_add_position_3d();
 vertex_format_add_normal();
@@ -29,50 +33,15 @@ self.vb_spawner = load_vbuff("spawner.vbuff", self.vertex_format);
 self.vb_snowball = load_vbuff("snowball.vbuff", self.vertex_format);
 self.vb_sunflower = load_vbuff("sunflower.vbuff", self.vertex_format);
 
-self.vb_lucas = load_vbuff("spacman.vbuff", self.vertex_format);
+self.vb_lucas = load_vbuff("mannetje.vbuff", self.vertex_format);
+self.vb_plate = load_vbuff("baseplate.vbuff", self.vertex_format);
+self.vb_drink = load_vbuff("champagne_glass_4b_2.vbuff", self.vertex_format);
 
 application_surface_draw_enable(false);
 
 self.mouselock = true;
 self.snowmen_remaining = 50;
 
-self.Spawn = function() {
-    static spawner_list = undefined;
-    static last_spawner = 0;
-    
-    if (spawner_list == undefined) {
-        spawner_list = array_create(instance_number(obj_spawner));
-        for (var i = 0, n = instance_number(obj_spawner); i < n; i++) {
-            spawner_list[i] = instance_find(obj_spawner, i);
-        }
-    }
-    
-    with (spawner_list[last_spawner]) {
-        instance_create_depth(self.x, self.y, 0, obj_xor, {
-        });
-    }
-    last_spawner++;
-    last_spawner %= array_length(spawner_list);
-    
-    self.snowmen_remaining--;
-    
-    if (self.snowmen_remaining > 0) {
-        time_source_reconfigure(self.timer,
-            time_source_get_period(self.timer) * 0.99,
-            time_source_get_units(self.timer),
-            self.Spawn,
-            [],
-            self.snowmen_remaining,
-        );
-        time_source_start(self.timer);
-    } else {
-        time_source_stop(self.timer);
-        time_source_destroy(self.timer);
-    }
-};
-
-self.timer = time_source_create(time_source_game, 4, time_source_units_seconds, self.Spawn, [], 50);
-time_source_start(self.timer);
 
 self.ThrowBalloon = function() {
     var throw_speed = 360;
@@ -96,13 +65,3 @@ self.OnSnowball = function() {
 };
 
 self.has_won = false;
-
-with (obj_xor) {
-    instance_destroy();
-}
-with (obj_snowball) {
-    instance_destroy();
-}
-with (obj_water_balloon) {
-    instance_destroy();
-}

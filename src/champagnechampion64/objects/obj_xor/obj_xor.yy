@@ -10,8 +10,8 @@
   "name":"obj_xor",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"undesired",
+    "path":"folders/objects/undesired.yy",
   },
   "parentObjectId":{
     "name":"obj_block",

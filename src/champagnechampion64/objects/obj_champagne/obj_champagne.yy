@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"col_balloon",
-    "path":"sprites/col_balloon/col_balloon.yy",
+    "name":"col_chmap",
+    "path":"sprites/col_chmap/col_chmap.yy",
   },
   "spriteMaskId":{
     "name":"col_player",

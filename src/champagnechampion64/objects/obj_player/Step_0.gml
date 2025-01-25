@@ -10,7 +10,7 @@ if (!self.mouselock) return;
 if global.convo = false
 {
 	self.direction += global.cursordx//(window_mouse_get_x() - window_get_width() / 2) / 10;
-	self.pitch += global.cursordy//(window_mouse_get_y() - window_get_height() / 2) / 10;
+	//self.pitch += global.cursordy//(window_mouse_get_y() - window_get_height() / 2) / 10;
 	self.pitch = clamp(self.pitch, -80, 80);
 
 	cursspr+=0.1

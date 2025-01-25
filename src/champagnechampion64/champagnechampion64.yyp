@@ -90,6 +90,7 @@
     {"id":{"name":"bubbl","path":"sprites/bubbl/bubbl.yy",},},
     {"id":{"name":"col_balloon","path":"sprites/col_balloon/col_balloon.yy",},},
     {"id":{"name":"col_base","path":"sprites/col_base/col_base.yy",},},
+    {"id":{"name":"col_chmap","path":"sprites/col_chmap/col_chmap.yy",},},
     {"id":{"name":"col_player","path":"sprites/col_player/col_player.yy",},},
     {"id":{"name":"col_snowball","path":"sprites/col_snowball/col_snowball.yy",},},
     {"id":{"name":"col_table","path":"sprites/col_table/col_table.yy",},},

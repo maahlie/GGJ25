@@ -21,17 +21,19 @@ cursdy = 0;
 canint = false;
 points = 0;
 
-suspicion=0;
+self.suspicion=0;
 maxsus=100;
 
 curspressed = false
 convotime = 0;
-maxconvotime = 10;
+maxconvotime = 500;
 
 mistcolor = #f6ca9f
 
 overstart=360
 overtime = 360
+
+peopltalk = audio_play_sound(snd_people,0,true)
 
 
 
@@ -76,6 +78,7 @@ self.vb_drink = load_vbuff("champagne_glass_4b_2.vbuff", self.vertex_format);
 self.vb_table = load_vbuff("tafel_rond.vbuff", self.vertex_format);
 
 self.vb_muur = load_vbuff("muur_3ramen.vbuff", self.vertex_format);
+self.vb_muurdeur = load_vbuff("muur_2ramen_deur.vbuff", self.vertex_format);
 
 application_surface_draw_enable(false);
 

@@ -38,6 +38,7 @@
     {"name":"rm_game","order":1,"path":"rooms/rm_game/rm_game.yy",},
     {"name":"rm_gameover","order":2,"path":"rooms/rm_gameover/rm_gameover.yy",},
     {"name":"Room1","order":3,"path":"rooms/Room1/Room1.yy",},
+    {"name":"snd_people","order":1,"path":"sounds/snd_people/snd_people.yy",},
     {"name":"bubbl","order":17,"path":"sprites/bubbl/bubbl.yy",},
     {"name":"col_balloon","order":5,"path":"sprites/col_balloon/col_balloon.yy",},
     {"name":"col_base","order":7,"path":"sprites/col_base/col_base.yy",},

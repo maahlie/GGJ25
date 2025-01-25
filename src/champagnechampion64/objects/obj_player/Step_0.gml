@@ -127,9 +127,9 @@ else
 					staring = false
 				}
 				
-				if suspicion > maxsus
+				if obj_player.suspicion > obj_player.maxsus
 				{
-					overtime = overstart
+					obj_player.overtime = obj_player.overstart
 					global.gameover = true
 				}
 				
@@ -175,9 +175,19 @@ if suspicion < 0
 suspicion = 0
 }
 
+if suspicion > 0
+{
+suspicion = 100
+}
+
 if global.gameover
 {
 	overtime--;
+	
+	if overtime < 300
+	{
+		audio_stop_sound(peopltalk)
+	}
 	
 	if overtime <= 0
 	{

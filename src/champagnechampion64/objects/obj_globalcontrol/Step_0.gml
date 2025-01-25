@@ -29,6 +29,11 @@ if instance_exists(obj_player)
 	global.points = obj_player.points
 }
 
+if global.hscore < global.points
+{
+	global.hscore = global.points
+}
+
 if keyboard_check_pressed(vk_f11)
 {
 	if window_get_fullscreen() == true

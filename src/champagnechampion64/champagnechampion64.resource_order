@@ -13,6 +13,7 @@
     {"name":"fnt_credis","order":2,"path":"fonts/fnt_credis/fnt_credis.yy",},
     {"name":"fnt_dialog","order":3,"path":"fonts/fnt_dialog/fnt_dialog.yy",},
     {"name":"fnt_ingame","order":1,"path":"fonts/fnt_ingame/fnt_ingame.yy",},
+    {"name":"fnt_notices","order":5,"path":"fonts/fnt_notices/fnt_notices.yy",},
     {"name":"fnt_points","order":4,"path":"fonts/fnt_points/fnt_points.yy",},
     {"name":"obj_base","order":2,"path":"objects/obj_base/obj_base.yy",},
     {"name":"obj_block_inv","order":4,"path":"objects/obj_block_inv/obj_block_inv.yy",},

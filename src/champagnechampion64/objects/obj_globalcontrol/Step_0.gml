@@ -24,6 +24,11 @@ global.start_hold = keyboard_check(vk_escape) | gamepad_button_check(0, gp_start
 global.cursordx = -gamepad_axis_value(0, gp_axislh)*3 - (window_mouse_get_x() - window_get_width() / 2) / 10;
 global.cursordy = gamepad_axis_value(0, gp_axislv)*3 + (window_mouse_get_y() - window_get_height() / 2) / 10;
 
+if instance_exists(obj_player)
+{
+	global.points = obj_player.points
+}
+
 if keyboard_check_pressed(vk_f11)
 {
 	if window_get_fullscreen() == true

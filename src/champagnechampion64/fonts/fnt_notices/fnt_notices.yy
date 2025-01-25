@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fnt_points",
+  "%Name":"fnt_notices",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":58,
@@ -446,7 +446,7 @@
   "last":0,
   "lineHeight":75,
   "maintainGms1Font":false,
-  "name":"fnt_points",
+  "name":"fnt_notices",
   "parent":{
     "name":"fonts",
     "path":"folders/fonts.yy",

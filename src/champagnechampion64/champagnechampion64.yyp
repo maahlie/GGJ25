@@ -51,6 +51,7 @@
     {"id":{"name":"fnt_dialog","path":"fonts/fnt_dialog/fnt_dialog.yy",},},
     {"id":{"name":"fnt_game","path":"fonts/fnt_game/fnt_game.yy",},},
     {"id":{"name":"fnt_ingame","path":"fonts/fnt_ingame/fnt_ingame.yy",},},
+    {"id":{"name":"fnt_notices","path":"fonts/fnt_notices/fnt_notices.yy",},},
     {"id":{"name":"fnt_points","path":"fonts/fnt_points/fnt_points.yy",},},
     {"id":{"name":"obj_base","path":"objects/obj_base/obj_base.yy",},},
     {"id":{"name":"obj_block_inv","path":"objects/obj_block_inv/obj_block_inv.yy",},},

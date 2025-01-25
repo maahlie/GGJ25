@@ -26,9 +26,13 @@ maxsus=100;
 
 curspressed = false
 convotime = 0;
-maxconvotime = 600;
+maxconvotime = 10;
 
 mistcolor = #f6ca9f
+
+overstart=360
+overtime = 360
+
 
 
 global.textoptions = [

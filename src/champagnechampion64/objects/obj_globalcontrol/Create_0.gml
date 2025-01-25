@@ -21,5 +21,7 @@ global.a_hold = false;
 global.b_hold = false;
 global.start_hold = false;
 
+global.points = 0
+
 gamepad_set_axis_deadzone(0,0.5)
 

@@ -98,6 +98,14 @@ else
 		{
 			staring = false
 		}
+		
+		if suspicion > maxsus
+		{
+			overtime = overstart
+			global.gameover = true
+			
+		}
+		
 		with obj_bubble 
 		{
 			instance_destroy()
@@ -118,6 +126,13 @@ else
 				{
 					staring = false
 				}
+				
+				if suspicion > maxsus
+				{
+					overtime = overstart
+					global.gameover = true
+				}
+				
 				with obj_bubble 
 				{
 					instance_destroy()
@@ -127,7 +142,7 @@ else
 	}
 }
 
-if canint
+if canint and !global.gameover
 {
 	var _inst = instance_place(self.x, self.y, obj_champagne);
 	if (global.a_pressed)
@@ -140,7 +155,7 @@ if canint
 		canint = false
 		convotime = 0
 		
-		alarm[1] = 90
+		alarm[1] = 150
 		
 		target = instance_nearest(x, y, obj_npc);
 		target.staring = true
@@ -158,6 +173,16 @@ if canint
 if suspicion < 0
 {
 suspicion = 0
+}
+
+if global.gameover
+{
+	overtime--;
+	
+	if overtime <= 0
+	{
+		room = rm_gameover
+	}
 }
 
 if (global.b_pressed)

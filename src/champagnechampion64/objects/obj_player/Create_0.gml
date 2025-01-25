@@ -6,12 +6,38 @@ self.max_speed = 120;
 
 cursspr = 0
 
+invertedlol = false
+
 dx = 0;
 dy = 0;
 
+cursx = 240;
+cursy = 135;
+
+cursdx = 0;
+cursdy = 0;
+
 canint = false;
 points = 0;
+
 suspicion=0;
+maxsus=100;
+
+curspressed = false
+convotime = 0;
+maxconvotime = 600;
+
+mistcolor = #ffa214
+
+
+global.textoptions = [
+	["Hey I haven't\nseen you around\nthe office\nhave I?",
+	"I was invited\nby the wife",
+	"I work\nin waste\nmanagement",
+	"I've been\non paid leave\nfor 6 months",
+	"Where the\nhell am I?",
+	0,1,4,15]
+]
 
 vertex_format_begin();
 vertex_format_add_position_3d();

@@ -1,21 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_block_inv",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_bublecol",
+  "eventList":[],
   "managed":true,
-  "name":"obj_block_inv",
+  "name":"obj_bublecol",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
     "path":"folders/objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_block",
-    "path":"objects/obj_block/obj_block.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -38,5 +32,5 @@
     "path":"sprites/spr_block/spr_block.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

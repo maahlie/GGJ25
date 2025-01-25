@@ -8,7 +8,7 @@ global.right_pressed = keyboard_check_pressed(ord("D")) | gamepad_button_check_p
 global.up_pressed = keyboard_check_pressed(ord("W")) | gamepad_button_check_pressed(0, gp_padu);
 global.down_pressed = keyboard_check_pressed(ord("S")) | gamepad_button_check_pressed(0, gp_padd);
 
-global.a_pressed = keyboard_check_pressed(ord("E")) | gamepad_button_check_pressed(0, gp_face1);
+global.a_pressed = keyboard_check_pressed(ord("E")) | gamepad_button_check_pressed(0, gp_face1) | mouse_check_button_pressed(mb_left);
 global.b_pressed = keyboard_check_pressed(vk_space) | gamepad_button_check_pressed(0, gp_face2);
 global.start_pressed = keyboard_check_pressed(vk_escape) | gamepad_button_check_pressed(0, gp_start);
 
@@ -17,7 +17,7 @@ global.right_hold = keyboard_check(ord("D")) | gamepad_button_check(0, gp_padr);
 global.up_hold = keyboard_check(ord("W")) | gamepad_button_check(0, gp_padu);
 global.down_hold = keyboard_check(ord("S")) | gamepad_button_check(0, gp_padd);
 
-global.a_hold = keyboard_check(ord("E")) | gamepad_button_check(0, gp_face1);
+global.a_hold = keyboard_check(ord("E")) | gamepad_button_check(0, gp_face1) | mouse_check_button(mb_left);
 global.b_hold = keyboard_check(vk_space) | gamepad_button_check(0, gp_face2);
 global.start_hold = keyboard_check(vk_escape) | gamepad_button_check(0, gp_start);
 

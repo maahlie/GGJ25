@@ -14,7 +14,7 @@ void main() {
     gl_FragColor = v_vColour * texture2D(gm_BaseTexture, v_vTexcoord);
     gl_FragColor.rgb *= u_Color;
     
-    gl_FragColor.rgb *= clamp(dot(v_vNormal, u_LightDirection), 0.5, 1.0);
+    gl_FragColor.rgb *= clamp(dot(v_vNormal, u_LightDirection), 0.8, 1.0);
     
     gl_FragColor.rgb = mix(gl_FragColor.rgb, u_FogColor, min(v_fDistance / u_FogDistance, u_FogStrength));
 }

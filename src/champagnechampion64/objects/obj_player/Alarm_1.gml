@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-bub0 = instance_create_depth(100,100,-99999,obj_bubble);
+		bub0 = instance_create_depth(100,100,-99999,obj_bubble);
 		bub0.txt = global.textoptions[0,1];
 		bub0.val = global.textoptions[0,5];
 		bub0.dx = -1

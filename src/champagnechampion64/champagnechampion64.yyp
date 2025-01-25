@@ -57,6 +57,7 @@
     {"id":{"name":"obj_bubble","path":"objects/obj_bubble/obj_bubble.yy",},},
     {"id":{"name":"obj_bublecol","path":"objects/obj_bublecol/obj_bublecol.yy",},},
     {"id":{"name":"obj_champagne","path":"objects/obj_champagne/obj_champagne.yy",},},
+    {"id":{"name":"obj_gameover","path":"objects/obj_gameover/obj_gameover.yy",},},
     {"id":{"name":"obj_globalcontrol","path":"objects/obj_globalcontrol/obj_globalcontrol.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},},
@@ -71,6 +72,7 @@
     {"id":{"name":"obj_waypoint","path":"objects/obj_waypoint/obj_waypoint.yy",},},
     {"id":{"name":"obj_xor","path":"objects/obj_xor/obj_xor.yy",},},
     {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"id":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},},
     {"id":{"name":"rm_startmenu","path":"rooms/rm_startmenu/rm_startmenu.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"draw_text_outlined","path":"scripts/draw_text_outlined/draw_text_outlined.yy",},},
@@ -98,6 +100,7 @@
     {"roomId":{"name":"rm_startmenu","path":"rooms/rm_startmenu/rm_startmenu.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_gameover","path":"rooms/rm_gameover/rm_gameover.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[

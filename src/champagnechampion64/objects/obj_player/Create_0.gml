@@ -1,4 +1,5 @@
-global.convo=false
+global.convo=false;
+global.gameover = false;
 
 self.pitch = 0;
 self.z = 0;

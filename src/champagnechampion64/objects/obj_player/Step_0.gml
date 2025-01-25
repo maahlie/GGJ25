@@ -70,6 +70,13 @@ if global.convo = false
 	{
 		canint = false;
 	}
+	
+	if suspicion >= 100 
+	{
+		global.gameover = true
+		//room = rm_gameover;
+	}
+	
 }
 else
 {

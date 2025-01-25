@@ -19,7 +19,7 @@ camera_apply(camera);
 
 shader_set(shd_world);
 shader_set_uniform_f(shader_get_uniform(shd_world, "u_Color"), 1, 1, 1);
-shader_set_uniform_f(shader_get_uniform(shd_world, "u_LightDirection"), 1, 1, -1);
+shader_set_uniform_f(shader_get_uniform(shd_world, "u_LightDirection"), -1, -1, 1);
 shader_set_uniform_f(shader_get_uniform(shd_world, "u_FogColor"), colour_get_red(mistcolor) / 255, colour_get_green(mistcolor) / 255, colour_get_blue(mistcolor) / 255);
 shader_set_uniform_f(shader_get_uniform(shd_world, "u_FogDistance"), 1500);
 shader_set_uniform_f(shader_get_uniform(shd_world, "u_FogStrength"), 0.5);

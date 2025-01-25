@@ -13,7 +13,7 @@ if global.convo
 		draw_circle(x,y,48,false);
 		
 		draw_set_halign(fa_center);
-		draw_text_outlined(x,y,string(txt),c_white,c_black,1);	
+		draw_text_outlined(x,y,string(txt),c_white,c_black,1);
 	}
 	
 	draw_set_valign(fa_top)

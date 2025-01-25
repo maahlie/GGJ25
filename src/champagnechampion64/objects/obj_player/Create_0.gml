@@ -28,7 +28,7 @@ curspressed = false
 convotime = 0;
 maxconvotime = 600;
 
-mistcolor = #ffa214
+mistcolor = #f6ca9f
 
 
 global.textoptions = [
@@ -70,6 +70,8 @@ self.vb_npc[1] = load_vbuff("dame.vbuff", self.vertex_format);
 self.vb_plate = load_vbuff("baseplate.vbuff", self.vertex_format);
 self.vb_drink = load_vbuff("champagne_glass_4b_2.vbuff", self.vertex_format);
 self.vb_table = load_vbuff("tafel_rond.vbuff", self.vertex_format);
+
+self.vb_muur = load_vbuff("muur_3ramen.vbuff", self.vertex_format);
 
 application_surface_draw_enable(false);
 

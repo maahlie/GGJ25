@@ -4,6 +4,6 @@ curspressed = global.a_hold
 
 if global.a_pressed 
 {
-	room_goto(rm_game)
+	alarm[0] = 45
 }
 

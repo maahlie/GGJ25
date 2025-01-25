@@ -5,14 +5,11 @@ if global.convo and not global.gameover
 	draw_set_valign(fa_middle)
 	draw_set_color(c_white)
 	draw_set_font(fnt_dialog)
-	draw_text(240,240,string(global.textoptions[0,0]))
+	draw_text(240,240,string(global.textoptions[currentint,0]))
 	
 	with obj_bubble 
 	{
-		//draw_set_color(c_red);
-		//draw_circle(x,y,48,false);
-		draw_sprite(spr_bubble,0,x,y)
-		
+		draw_sprite(spr_bubble,0,x,y)	
 		draw_set_halign(fa_center);
 		draw_text_outlined(x,y,string(txt),c_white,c_black,1);
 	}

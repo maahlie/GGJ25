@@ -37,7 +37,10 @@ overtime = 360
 
 peopltalk = audio_play_sound(snd_people,0,true)
 
+interactcount = 13;
+currentint = 0;
 
+t=0;
 
 global.textoptions = [
 	["Hey I haven't\nseen you around\nthe office have I?",

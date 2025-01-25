@@ -11,7 +11,9 @@ if global.convo = false
 {
 	self.direction += global.cursordx//(window_mouse_get_x() - window_get_width() / 2) / 10;
 	//self.pitch += global.cursordy//(window_mouse_get_y() - window_get_height() / 2) / 10;
-	self.pitch = clamp(self.pitch, -80, 80);
+	//self.pitch = clamp(self.pitch, -80, 80);
+	
+	
 
 	cursspr+=0.1
 
@@ -127,6 +129,15 @@ else
 					staring = false
 				}
 				
+				if global.points < 10
+				{
+					obj_player.currentint = irandom(9)
+				}
+				else
+				{
+					obj_player.currentint = irandom(obj_player.interactcount-1)
+				}
+				
 				if obj_player.suspicion > obj_player.maxsus
 				{
 					obj_player.overtime = obj_player.overstart
@@ -199,6 +210,7 @@ winefr+=1
 
 if (global.b_pressed)
 {
+	points++;
 	gamepad_set_vibration(0,1,1)
 	alarm[0] = 30
 }

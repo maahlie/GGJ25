@@ -7,3 +7,5 @@ cursdx = 0;
 cursdy = 0;
 
 curspressed = false
+
+lol = false

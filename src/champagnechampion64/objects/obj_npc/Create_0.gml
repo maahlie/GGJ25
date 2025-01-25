@@ -2,5 +2,5 @@
 // You can write your code in this editor
 staring = false
 
-look = irandom(1);
+look = irandom(3);
 

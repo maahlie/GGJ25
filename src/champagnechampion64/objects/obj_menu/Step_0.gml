@@ -2,8 +2,10 @@
 // You can write your code in this editor
 curspressed = global.a_hold
 
-if global.a_pressed 
+if global.a_pressed and !lol
 {
+	lol=true
 	alarm[0] = 45
+	obj_menucamera.dx = 100
 }
 

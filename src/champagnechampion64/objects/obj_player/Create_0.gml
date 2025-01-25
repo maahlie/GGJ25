@@ -155,6 +155,8 @@ self.vb_sunflower = load_vbuff("sunflower.vbuff", self.vertex_format);
 
 self.vb_npc[0] = load_vbuff("mannetje.vbuff", self.vertex_format);
 self.vb_npc[1] = load_vbuff("dame.vbuff", self.vertex_format);
+self.vb_npc[2] = load_vbuff("mannetje_bolhoed.vbuff", self.vertex_format);
+self.vb_npc[3] = load_vbuff("mannetje_fez.vbuff", self.vertex_format);
 
 self.vb_plate = load_vbuff("baseplate.vbuff", self.vertex_format);
 self.vb_drink = load_vbuff("champagne_glass_4b_2.vbuff", self.vertex_format);

@@ -2,21 +2,23 @@ if global.convo
 {
 	draw_sprite(spr_dialog,0,240,270)
 	draw_set_halign(fa_center)
+	draw_set_valign(fa_middle)
 	draw_set_color(c_white)
 	draw_set_font(fnt_dialog)
-	draw_text(240,224,string(global.textoptions[0,0]))
+	draw_text(240,240,string(global.textoptions[0,0]))
 	
 	with obj_bubble 
 	{
 		draw_set_color(c_red)
 		draw_circle(x,y,48,false)
-		draw_set_valign(fa_middle)
+		
 		draw_set_halign(fa_center)
 		draw_text_outlined(x,y,string(txt),c_white,c_black,1)
 
-		draw_set_valign(fa_top)
+		
 	}
 	
+	draw_set_valign(fa_top)
 	draw_sprite(spr_cursor,curspressed,cursx,cursy)
 }
 else

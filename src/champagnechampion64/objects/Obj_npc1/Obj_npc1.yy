@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bublecol",
-  "eventList":[],
+  "%Name":"Obj_npc1",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_bublecol",
+  "name":"Obj_npc1",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
     "path":"folders/objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_npc",
+    "path":"objects/obj_npc/obj_npc.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -26,11 +31,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"spr_block",
-    "path":"sprites/spr_block/spr_block.yy",
+    "name":"col_balloon",
+    "path":"sprites/col_balloon/col_balloon.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"col_player",
+    "path":"sprites/col_player/col_player.yy",
+  },
   "visible":true,
 }

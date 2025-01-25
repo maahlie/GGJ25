@@ -32,7 +32,7 @@ mistcolor = #ffa214
 
 
 global.textoptions = [
-	["Hey I haven't\nseen you around\nthe office\nhave I?",
+	["Hey I haven't\nseen you around\nthe office have I?",
 	"I was invited\nby the wife",
 	"I work\nin waste\nmanagement",
 	"I've been\non paid leave\nfor 6 months",
@@ -65,6 +65,8 @@ self.vb_snowball = load_vbuff("snowball.vbuff", self.vertex_format);
 self.vb_sunflower = load_vbuff("sunflower.vbuff", self.vertex_format);
 
 self.vb_npc = load_vbuff("mannetje.vbuff", self.vertex_format);
+self.vb_npc1 = load_vbuff("dame.vbuff", self.vertex_format);
+
 self.vb_plate = load_vbuff("baseplate.vbuff", self.vertex_format);
 self.vb_drink = load_vbuff("champagne_glass_4b_2.vbuff", self.vertex_format);
 self.vb_table = load_vbuff("tafel_rond.vbuff", self.vertex_format);

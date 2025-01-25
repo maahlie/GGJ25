@@ -1,9 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-dx = 0
-dy = 0
+staring = false
 
-sprite_index = spr_bubble_redt
-txt=""
-val=0
-radi=48
+look = irandom(2)

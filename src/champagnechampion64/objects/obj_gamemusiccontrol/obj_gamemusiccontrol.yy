@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_npc1",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_gamemusiccontrol",
+  "eventList":[],
   "managed":true,
-  "name":"Obj_npc1",
+  "name":"obj_gamemusiccontrol",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
     "path":"folders/objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_npc",
-    "path":"objects/obj_npc/obj_npc.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,13 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"col_balloon",
-    "path":"sprites/col_balloon/col_balloon.yy",
-  },
-  "spriteMaskId":{
-    "name":"col_player",
-    "path":"sprites/col_player/col_player.yy",
-  },
+  "spriteId":null,
+  "spriteMaskId":null,
   "visible":true,
 }

@@ -171,6 +171,8 @@ if canint
 		{
 			instance_destroy()
 		}
+		
+		
 	}
 }
 

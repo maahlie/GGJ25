@@ -9,13 +9,11 @@ if global.convo
 	
 	with obj_bubble 
 	{
-		draw_set_color(c_red)
-		draw_circle(x,y,48,false)
+		draw_set_color(c_red);
+		draw_circle(x,y,48,false);
 		
-		draw_set_halign(fa_center)
-		draw_text_outlined(x,y,string(txt),c_white,c_black,1)
-
-		
+		draw_set_halign(fa_center);
+		draw_text_outlined(x,y,string(txt),c_white,c_black,1);	
 	}
 	
 	draw_set_valign(fa_top)

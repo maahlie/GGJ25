@@ -17,3 +17,9 @@ vertex_submit(obj_player.vb_muur, pr_trianglelist, -1);
 
 matrix_set(matrix_world, matrix_build(self.x-214, self.y-2, self.z, 0, 0, 90, 0.10, 0.10, 0.10));
 vertex_submit(obj_player.vb_muurdeur, pr_trianglelist, -1);
+
+matrix_set(matrix_world, matrix_build(self.x, self.y-2, 90, 0, 0, 90, 0.10, 0.10, 0.10));
+vertex_submit(obj_player.vb_luchter, pr_trianglelist, -1);
+
+matrix_set(matrix_world, matrix_build(self.x+192, self.y-2, 90, 0, 0, 90, 0.10, 0.10, 0.10));
+vertex_submit(obj_player.vb_luchter, pr_trianglelist, -1);

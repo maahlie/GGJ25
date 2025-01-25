@@ -24,7 +24,7 @@ shader_set_uniform_f(shader_get_uniform(shd_world, "u_FogColor"), colour_get_red
 shader_set_uniform_f(shader_get_uniform(shd_world, "u_FogDistance"), 1500);
 shader_set_uniform_f(shader_get_uniform(shd_world, "u_FogStrength"), 0.5);
 
-matrix_set(matrix_world, matrix_build(self.x-70, self.y, self.z-32, 0, 0, 270, 0.1, 0.1, 0.1));
+matrix_set(matrix_world, matrix_build(-70, 127, self.z-32, 0, 0, 270, 0.1, 0.1, 0.1));
 vertex_submit( obj_menucamera.vb_decor, pr_trianglelist, -1);
 
 //matrix_set(matrix_world, matrix_build(self.x, self.y, 0, 0, 0, 0, 1, 1, 1));

@@ -164,6 +164,7 @@ self.vb_table = load_vbuff("tafel_rond.vbuff", self.vertex_format);
 
 self.vb_muur = load_vbuff("muur_3ramen.vbuff", self.vertex_format);
 self.vb_muurdeur = load_vbuff("muur_2ramen_deur.vbuff", self.vertex_format);
+self.vb_luchter = load_vbuff("kroonluchter.vbuff", self.vertex_format);
 
 application_surface_draw_enable(false);
 

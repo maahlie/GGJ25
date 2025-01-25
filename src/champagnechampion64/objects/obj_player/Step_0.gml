@@ -158,7 +158,8 @@ if canint and !global.gameover
 	var _inst = instance_place(self.x, self.y, obj_champagne);
 	if (global.a_pressed)
 	{
-		
+		son = choose(snd_quaff0,snd_quaff1,snd_quaff2);
+		audio_play_sound(son,10,false)
 		points++;
 		global.convo = true
 		cursx = 240;

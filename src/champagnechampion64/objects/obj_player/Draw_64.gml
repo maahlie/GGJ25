@@ -26,7 +26,6 @@ else
 	var bx = 8
 	var by = 6
 	
-	
 	draw_set_color(c_yellow)
 	
 	if suspicion >=100

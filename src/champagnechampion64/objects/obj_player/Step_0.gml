@@ -175,7 +175,7 @@ if suspicion < 0
 suspicion = 0
 }
 
-if suspicion > 0
+if suspicion > 100
 {
 suspicion = 100
 }
@@ -194,6 +194,8 @@ if global.gameover
 		room = rm_gameover
 	}
 }
+
+winefr+=1
 
 if (global.b_pressed)
 {

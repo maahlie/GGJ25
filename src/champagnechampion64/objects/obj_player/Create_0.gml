@@ -9,6 +9,8 @@ cursspr = 0
 
 invertedlol = false
 
+winefr = 0
+
 dx = 0;
 dy = 0;
 

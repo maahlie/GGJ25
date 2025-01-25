@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+if obj_player.suspicion >= 100
+{
+	staring = true
+}
+
 
 if staring = true
 {

@@ -9,8 +9,9 @@ if global.convo and not global.gameover
 	
 	with obj_bubble 
 	{
-		draw_set_color(c_red);
-		draw_circle(x,y,48,false);
+		//draw_set_color(c_red);
+		//draw_circle(x,y,48,false);
+		draw_sprite(spr_bubble,0,x,y)
 		
 		draw_set_halign(fa_center);
 		draw_text_outlined(x,y,string(txt),c_white,c_black,1);
@@ -41,8 +42,9 @@ else
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_top)
 	draw_set_font(fnt_points)
-
-	draw_text_outlined(360,8,string(points),c_yellow,c_black,1)
+	
+	draw_sprite(spr_champagne_spin,winefr,304,-4)
+	draw_text_outlined(350,8,": "+string(points),c_yellow,c_black,1)
 
 	draw_set_font(fnt_ingame)
 	if canint

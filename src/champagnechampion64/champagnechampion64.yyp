@@ -96,6 +96,8 @@
     {"id":{"name":"spr_bubble_green","path":"sprites/spr_bubble_green/spr_bubble_green.yy",},},
     {"id":{"name":"spr_bubble_redt","path":"sprites/spr_bubble_redt/spr_bubble_redt.yy",},},
     {"id":{"name":"spr_bubble_yellow","path":"sprites/spr_bubble_yellow/spr_bubble_yellow.yy",},},
+    {"id":{"name":"spr_bubble","path":"sprites/spr_bubble/spr_bubble.yy",},},
+    {"id":{"name":"spr_champagne_spin","path":"sprites/spr_champagne_spin/spr_champagne_spin.yy",},},
     {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
     {"id":{"name":"spr_dialog","path":"sprites/spr_dialog/spr_dialog.yy",},},
     {"id":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},},

@@ -14,6 +14,8 @@ if points > 30
 	fac = 2
 }
 
+
+
 		bub0 = instance_create_depth(100,100,-99999,obj_bubble);
 		bub0.txt = global.textoptions[currentint,(1+ran)%4+1];
 		bub0.val = global.textoptions[currentint,(5+ran)%4+5];

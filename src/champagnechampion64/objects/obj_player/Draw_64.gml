@@ -9,9 +9,20 @@ if global.convo and not global.gameover
 	
 	with obj_bubble 
 	{
-		draw_sprite(spr_bubble,0,x,y)	
-		draw_set_halign(fa_center);
-		draw_text_outlined(x,y,string(txt),c_white,c_black,1);
+		if !exposed
+		{
+			if !hidden 
+			{
+			draw_sprite(spr_bubble,0,x,y)	
+			draw_set_halign(fa_center);
+			draw_text_outlined(x,y,string(txt),c_white,toutline,1);
+			}
+		}
+		else
+		{
+			draw_text_outlined(x,y,string(txt),c_white,c_black,1);
+		}
+		//draw_text_outlined(x,y,string(txt),c_white,#eeeeee,1);
 	}
 	
 	draw_set_valign(fa_top)

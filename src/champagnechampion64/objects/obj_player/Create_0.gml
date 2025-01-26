@@ -11,6 +11,8 @@ invertedlol = false
 
 winefr = 0
 
+popped = false
+
 dx = 0;
 dy = 0;
 

@@ -7,3 +7,8 @@ sprite_index = spr_bubble_redt
 txt=""
 val=0
 radi=48
+
+exposed = false
+hidden = false
+
+toutline = c_black

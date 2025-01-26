@@ -4,14 +4,15 @@ var dt = game_get_speed(gamespeed_microseconds) / 1000000;
 if points > 7
 {
 	t++
-	amp = 0.15
+	var amp = 0.15
 	if points > 14 { amp = 0.4 }
 	if points > 29 { amp = 0.6 }
 
 	fovxmod = amp*sin(t/60)
 }
 
-if (keyboard_check_pressed(vk_tab)) {
+if (keyboard_check_pressed(vk_tab)) 
+{
     self.mouselock = !self.mouselock;
 }
 
@@ -96,14 +97,31 @@ else
 	cursdx = -global.cursordx + (global.right_hold - global.left_hold)*4
 	cursdy = global.cursordy + (global.down_hold - global.up_hold)*4
 	
+	if points > 13
+	{
+		var pp = 1
+		pp = points/10;
+		
+		if pp>8 
+		{
+			pp = 8
+		}
+		
+		cursdx+=random_range(-pp,pp)
+		cursdy+=random_range(-pp,pp)
+	}
+	
 	cursx += cursdx
 	cursy += cursdy
 	
 	curspressed = global.a_hold
 	
+	if !popped 
+	{
 	convotime++
+	}
 	
-	if convotime > maxconvotime
+	if convotime > maxconvotime 
 	{
 		global.convo = false
 		suspicion += 50
@@ -132,8 +150,11 @@ else
 	{
 		with obj_bubble 
 		{
-			if point_distance(x,y,obj_player.cursx,obj_player.cursy) < radi
+			if point_distance(x,y,obj_player.cursx,obj_player.cursy) < radi and !hidden
 			{
+				
+				obj_player.popped = true
+				
 				if val > 10
 				{
 					son = choose(snd_huh0,snd_huh1,snd_huh2)
@@ -143,26 +164,22 @@ else
 				}
 				
 				obj_player.suspicion += val;
-				global.convo = false;
+				
 				audio_play_sound(snd_pop,10,false)
-				instance_destroy()
-				with obj_npc 
-				{
-					staring = false
-				}
+				
 				
 				//obj_player.currentint = global.points % obj_player.interactcount
+				obj_player.alarm[3] = 60
 				
-				if obj_player.suspicion > obj_player.maxsus
-				{
-					obj_player.overtime = obj_player.overstart
-					global.gameover = true
-				}
 				
+				exposed = true
 				with obj_bubble 
 				{
-					instance_destroy()
+					//instance_destroy()
+					hidden = true
 				}
+				
+				
 			}
 		}
 	}

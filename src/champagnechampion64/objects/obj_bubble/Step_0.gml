@@ -1,6 +1,4 @@
 /// @description Insert description here
-// You can write your code in this editor
-
 
 if y-radi < -32 or y+radi > 252 
 {
@@ -30,6 +28,9 @@ else
 	dy += 0.01
 }
 
+if !hidden 
+{
 
 x+=dx
 y+=dy
+}

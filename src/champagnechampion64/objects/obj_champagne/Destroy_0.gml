@@ -5,3 +5,4 @@ with inst
 {
 	instance_create_layer(x+random_range(-12,12),y+random_range(-12,12),"Instances_1",obj_champagne)
 }
+

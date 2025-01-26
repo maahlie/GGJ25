@@ -160,6 +160,17 @@ if canint and !global.gameover
 	{
 		son = choose(snd_quaff0,snd_quaff1,snd_quaff2);
 		audio_play_sound(son,10,false)
+		
+		for (var i = 0; i<24; i++)
+		{
+		var bub = instance_create_layer(_inst.x,_inst.y,"Instances_1",obj_bubparticle)
+		bub.z = _inst.z+5
+		bub.dx = random_range(-1.5,1.5)
+		bub.dy = random_range(-1.5,1.5)
+		bub.dz = random_range(3,4)
+		bub.alarm[0] = random_range(10,14)
+		}
+		
 		points++;
 		global.convo = true
 		cursx = 240;

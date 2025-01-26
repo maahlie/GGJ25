@@ -89,13 +89,13 @@ global.textoptions = [
 	"Exquisite!",
 	"It reminds me\nof something...",
 	"Who made\nthis garbage?",
-	"I'm deaf actually so I can't hear it.",
+	"I'm deaf actually\nso I can't hear it.",
 	0,5,10,19],
 	["What's your name?",
 	"Ernesto.",
-	"Tell me yours first hihi.",
+	"Tell me yours\nfirst hihi.",
 	"Uhh, Champagno...\nuhhh, Tables.",
-	"None of your business.",
+	"None of your \nbusiness.",
 	0,5,10,20],
 	["How long have you\nbeen working here?",
 	"5 years.",
@@ -165,6 +165,8 @@ self.vb_table = load_vbuff("tafel_rond.vbuff", self.vertex_format);
 self.vb_muur = load_vbuff("muur_3ramen.vbuff", self.vertex_format);
 self.vb_muurdeur = load_vbuff("muur_2ramen_deur.vbuff", self.vertex_format);
 self.vb_luchter = load_vbuff("kroonluchter.vbuff", self.vertex_format);
+
+self.vb_bubble = load_vbuff("bubbleplane.vbuff", self.vertex_format);
 
 application_surface_draw_enable(false);
 

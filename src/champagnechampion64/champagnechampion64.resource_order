@@ -42,6 +42,7 @@
     {"name":"Room1","order":3,"path":"rooms/Room1/Room1.yy",},
     {"name":"mu_buzzed","order":3,"path":"sounds/mu_buzzed/mu_buzzed.yy",},
     {"name":"mu_drunk","order":4,"path":"sounds/mu_drunk/mu_drunk.yy",},
+    {"name":"mu_questioned","order":10,"path":"sounds/mu_questioned/mu_questioned.yy",},
     {"name":"mu_sober","order":2,"path":"sounds/mu_sober/mu_sober.yy",},
     {"name":"snd_droeloe","order":2,"path":"sounds/snd_droeloe/snd_droeloe.yy",},
     {"name":"snd_fizz","order":8,"path":"sounds/snd_fizz/snd_fizz.yy",},

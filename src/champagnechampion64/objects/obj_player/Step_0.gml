@@ -132,7 +132,7 @@ else
 				{
 					staring = false
 				}
-				
+				/*
 				if global.points < 10
 				{
 					obj_player.currentint = irandom(9)
@@ -140,7 +140,9 @@ else
 				else
 				{
 					obj_player.currentint = irandom(obj_player.interactcount-1)
-				}
+				}*/
+				
+				obj_player.currentint = global.points % obj_player.interactcount
 				
 				if obj_player.suspicion > obj_player.maxsus
 				{

@@ -91,6 +91,7 @@
     {"id":{"name":"shd_world","path":"shaders/shd_world/shd_world.yy",},},
     {"id":{"name":"mu_buzzed","path":"sounds/mu_buzzed/mu_buzzed.yy",},},
     {"id":{"name":"mu_drunk","path":"sounds/mu_drunk/mu_drunk.yy",},},
+    {"id":{"name":"mu_questioned","path":"sounds/mu_questioned/mu_questioned.yy",},},
     {"id":{"name":"mu_sober","path":"sounds/mu_sober/mu_sober.yy",},},
     {"id":{"name":"snd_arrived","path":"sounds/snd_arrived/snd_arrived.yy",},},
     {"id":{"name":"snd_droeloe","path":"sounds/snd_droeloe/snd_droeloe.yy",},},

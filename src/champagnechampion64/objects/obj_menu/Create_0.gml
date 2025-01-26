@@ -9,3 +9,5 @@ cursdy = 0;
 curspressed = false
 
 lol = false
+
+audio_play_sound(mu_title, true, 0.25);

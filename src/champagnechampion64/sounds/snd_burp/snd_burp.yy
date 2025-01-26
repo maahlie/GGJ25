@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_quaff0",
+  "%Name":"snd_burp",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.348209,
-  "name":"snd_quaff0",
+  "duration":0.870748,
+  "name":"snd_burp",
   "parent":{
     "name":"sounds",
     "path":"folders/sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_quaff0.wav",
+  "soundFile":"snd_burp.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.33,
 }

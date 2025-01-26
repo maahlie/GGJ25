@@ -25,4 +25,4 @@ global.points = 0
 global.hscore = 0
 
 gamepad_set_axis_deadzone(0,0.5)
-
+random_set_seed(current_second);

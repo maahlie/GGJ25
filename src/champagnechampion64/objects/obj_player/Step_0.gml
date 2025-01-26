@@ -1,8 +1,15 @@
 var dt = game_get_speed(gamespeed_microseconds) / 1000000;
 
 
-t++
-fovxmod = 0.75*sin(t/60)
+if points > 7
+{
+	t++
+	amp = 0.15
+	if points > 14 { amp = 0.4 }
+	if points > 29 { amp = 0.6 }
+
+	fovxmod = amp*sin(t/60)
+}
 
 if (keyboard_check_pressed(vk_tab)) {
     self.mouselock = !self.mouselock;
@@ -100,6 +107,9 @@ else
 	{
 		global.convo = false
 		suspicion += 50
+		
+		audio_play_sound(snd_mmm,10,false)
+		
 		with obj_npc 
 		{
 			staring = false
@@ -124,6 +134,14 @@ else
 		{
 			if point_distance(x,y,obj_player.cursx,obj_player.cursy) < radi
 			{
+				if val > 10
+				{
+					son = choose(snd_huh0,snd_huh1,snd_huh2)
+					audio_play_sound(son,10,false)
+					gamepad_set_vibration(0,1,1)
+					alarm[0] = 30
+				}
+				
 				obj_player.suspicion += val;
 				global.convo = false;
 				audio_play_sound(snd_pop,10,false)
@@ -132,17 +150,8 @@ else
 				{
 					staring = false
 				}
-				/*
-				if global.points < 10
-				{
-					obj_player.currentint = irandom(9)
-				}
-				else
-				{
-					obj_player.currentint = irandom(obj_player.interactcount-1)
-				}*/
 				
-				obj_player.currentint = global.points % obj_player.interactcount
+				//obj_player.currentint = global.points % obj_player.interactcount
 				
 				if obj_player.suspicion > obj_player.maxsus
 				{
@@ -164,8 +173,7 @@ if canint and !global.gameover
 	var _inst = instance_place(self.x, self.y, obj_champagne);
 	if (global.a_pressed)
 	{
-		son = choose(snd_quaff0,snd_quaff1,snd_quaff2);
-		audio_play_sound(son,10,false)
+		audio_play_sound(snd_quaff0,10,false)
 		
 		for (var i = 0; i<24; i++)
 		{
@@ -175,6 +183,31 @@ if canint and !global.gameover
 			bub.dy = random_range(-1.5,1.5)
 			bub.dz = random_range(3,4)
 			bub.alarm[0] = random_range(10,14)
+		}
+		
+		var r=0
+		
+		r=irandom(99)
+		
+		if r >79
+		{
+			alarm[2] = 50
+		}
+		var oldint = obj_player.currentint
+		
+		if global.points < 10
+		{
+			obj_player.currentint = irandom(9)
+		}
+		else
+		{
+			obj_player.currentint = irandom(obj_player.interactcount-1)
+		}
+		
+		if obj_player.currentint == oldint
+		{
+			obj_player.currentint += 1 
+			obj_player.currentint %= obj_player.interactcount
 		}
 		
 		points++;
@@ -194,8 +227,6 @@ if canint and !global.gameover
 		{
 			instance_destroy()
 		}
-		
-		
 	}
 }
 
@@ -232,9 +263,9 @@ if global.gameover
 
 winefr+=1
 
-if (global.b_pressed)
-{
-	points++;
-	gamepad_set_vibration(0,1,1)
-	alarm[0] = 30
-}
+//if (global.b_pressed)
+//{
+//	points++;
+//	gamepad_set_vibration(0,1,1)
+//	alarm[0] = 30
+//}

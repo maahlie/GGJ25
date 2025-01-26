@@ -10,4 +10,4 @@ curspressed = false
 
 lol = false
 
-audio_play_sound(mu_title, true, 0.25);
+audio_play_sound(mu_title, 1, true, 0.25);

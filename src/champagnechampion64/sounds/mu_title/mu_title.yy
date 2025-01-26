@@ -9,7 +9,7 @@
   "bitRate":224,
   "compression":0,
   "conversionMode":0,
-  "duration":14.769229,
+  "duration":29.538458,
   "name":"mu_title",
   "parent":{
     "name":"sounds",

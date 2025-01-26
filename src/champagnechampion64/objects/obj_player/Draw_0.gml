@@ -11,7 +11,7 @@ gpu_set_ztestenable(true);
 gpu_set_zwriteenable(true);
 
 var view_mat = matrix_build_lookat(xfrom, yfrom, zfrom, xto, yto, zto, 0, 0, 1);
-var proj_mat = matrix_build_projection_perspective_fov(-60, -window_get_width() / window_get_height(), 1, 10000);
+var proj_mat = matrix_build_projection_perspective_fov(-60 + 10*fovxmod, -window_get_width() / window_get_height() + fovxmod, 1, 10000);
 var camera = camera_get_active();
 camera_set_view_mat(camera, view_mat);
 camera_set_proj_mat(camera, proj_mat);

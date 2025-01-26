@@ -7,5 +7,10 @@ if (keyboard_check_pressed(vk_tab)) {
 if (!window_has_focus()) return;
 if (!self.mouselock) return;
 
+if obj_menu.lol
+{
+	hobodir-=2
+}
+
 self.x += self.dx
 self.y += self.dy

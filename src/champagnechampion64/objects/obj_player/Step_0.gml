@@ -1,5 +1,9 @@
 var dt = game_get_speed(gamespeed_microseconds) / 1000000;
 
+
+t++
+fovxmod = 0.75*sin(t/60)
+
 if (keyboard_check_pressed(vk_tab)) {
     self.mouselock = !self.mouselock;
 }
@@ -163,12 +167,12 @@ if canint and !global.gameover
 		
 		for (var i = 0; i<24; i++)
 		{
-		var bub = instance_create_layer(_inst.x,_inst.y,"Instances_1",obj_bubparticle)
-		bub.z = _inst.z+5
-		bub.dx = random_range(-1.5,1.5)
-		bub.dy = random_range(-1.5,1.5)
-		bub.dz = random_range(3,4)
-		bub.alarm[0] = random_range(10,14)
+			var bub = instance_create_layer(_inst.x,_inst.y,"Instances_1",obj_bubparticle)
+			bub.z = _inst.z+5
+			bub.dx = random_range(-1.5,1.5)
+			bub.dy = random_range(-1.5,1.5)
+			bub.dz = random_range(3,4)
+			bub.alarm[0] = random_range(10,14)
 		}
 		
 		points++;
@@ -193,6 +197,11 @@ if canint and !global.gameover
 	}
 }
 
+if overtime == 260
+{
+	audio_play_sound(snd_thub,10,false);
+}
+
 if suspicion < 0
 {
 suspicion = 0
@@ -214,6 +223,7 @@ if global.gameover
 	
 	if overtime <= 0
 	{
+		audio_play_sound(snd_thub,10,false);
 		room = rm_gameover
 	}
 }

@@ -22,6 +22,8 @@ cursdy = 0;
 
 mistcolor = #000000
 
+hobodir = 270
+
 
 vertex_format_begin();
 vertex_format_add_position_3d();
@@ -39,6 +41,7 @@ var load_vbuff = function(filename, format) {
 };
 
 self.vb_decor = load_vbuff("Intro_3D_scene.vbuff", self.vertex_format);
+self.vb_guy = load_vbuff("zwerver2.vbuff", self.vertex_format);
 
 application_surface_draw_enable(false);
 

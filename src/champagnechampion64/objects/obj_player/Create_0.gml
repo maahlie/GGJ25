@@ -17,6 +17,11 @@ dy = 0;
 cursx = 240;
 cursy = 135;
 
+fovxmod = 0//-window_get_width() / window_get_height()
+fovymod = 0//-60
+
+t=0;
+
 cursdx = 0;
 cursdy = 0;
 
@@ -40,7 +45,7 @@ peopltalk = audio_play_sound(snd_people,0,true)
 interactcount = 13;
 currentint = 0;
 
-t=0;
+
 
 global.textoptions = [
 	["Hey I haven't\nseen you around\nthe office have I?",
@@ -50,7 +55,7 @@ global.textoptions = [
 	"Where the\nhell am I?",
 	0,5,10,15],
 	["Do you work here?\nget dressed then!",
-	"Sorry sir was\njust getting\nto it.",
+	"Sorry was\njust getting\nto it.",
 	"I was just\nleaving.",
 	"I work for you!",
 	"*unzips pants*",

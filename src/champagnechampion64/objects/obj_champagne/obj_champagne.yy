@@ -39,6 +39,9 @@
     "name":"col_chmap",
     "path":"sprites/col_chmap/col_chmap.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"col_table",
+    "path":"sprites/col_table/col_table.yy",
+  },
   "visible":true,
 }
